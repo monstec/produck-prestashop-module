@@ -2,7 +2,7 @@
   "name": "prestashop-modules",
   "version": "0.0.1",
   "description": "This project contains all modules for Prestashop.",
-  "repository": "git@elg.us.to:unicorn/con-client-plugins.git",
+  "repository": "git@github.com:monstec/produck-prestashop-module.git",
   "license": "MonsTec-Standard-License-1.0",
   "devDependencies": {
     "@babel/core": "^7.0.0",
