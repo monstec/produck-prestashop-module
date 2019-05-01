@@ -1,0 +1,131 @@
+MonsTec Prestashop Module License v.1.0 (MPML-1.0)
+
+This Software License (the "License") applies to any original work of authorship
+(the "Original Work") where MonsTec UG (haftungsbeschränkt) (the "Licensor") has
+placed the following licensing notice visible to you (the "Licensee").
+
+Licensed under the MonsTec Prestashop Module License v.1.0
+
+1. GRANT OF LICENSE
+The Licensor hereby grants to the Licensee a non-transferable and non-exclusive
+license, for the duration identified below, to use the Original Work solely in
+accordance with this License. The Original Work may be installed, executed, and
+accessed only by the Licensee and it's customers.
+No rights, including any right to use, reproduce or display, other than those
+specifically described in this Agreement, are granted to the Licensee.
+The Licensee may not modify or make works derivative of the Original Work or make
+compilations or collective works that include the Original Work. Except to the
+extent permitted by applicable law, the Licensee shall not analyse for purposes
+competitive to the Licensor or its affiliates, reverse-engineer, decompile,
+disassemble, or otherwise translate all or part of the Original Work.
+
+2. TERM & TERMINATION
+A. Term
+This License shall come into full force and effect on the Effective Date, which
+shall mean the date of the Licensee's (i) acceptance of these terms and conditions,
+where acceptance is indicated via a user interface presenting this Agreement,
+(ii) downloading and/or installing the Licensed Program(s), or (iii) acceptance
+of another agreement that incorporates this License by reference. The initial term
+of this License shall extend for a period of twelve (12) months after the Effective
+Date; thereafter, this License shall remain in full force and effect until the
+termination or expiration of all licensed work and licenses granted under it, unless
+terminated as provided hereunder.
+
+Any Original Work ordered under an annual pricing structure shall automatically renew
+upon the anniversary date of such Original Work.
+
+B. Termination
+This Agreement may be terminated at any time by the Licensor for any breach
+hereof upon notice to the Licensee. Periodic activation may be required by the
+Licensee to continue use of the Original Work. Use of the Original Work may be
+interrupted until necessary activation steps are taken by the Licensee. Upon
+termination hereof, the Licensee shall immediately uninstall and delete all
+copies of the Original Work and discontinue use of the Original Work.
+Sections 3, 4, 5, 6 and 7 of this License shall survive termination hereof.
+
+3. INTELLECTUAL PROPERTY
+The Original Work, including any copies made by or for the Licensee, in whole or
+in part, are the sole property of the Licensor. All intellectual property rights
+in the Original Work belong exclusively to the Licensor as long as it does not
+lie in the scope any other license agreement that states otherwise. The Licensor
+shall retain all title, copyright and other intellectual property rights in the
+Original Work and all modifications, enhancements or other works derivative of the
+Original Work as long as it does not fall under the exception named before.
+
+The Licensee shall preserve and reproduce any copyright, patent and trademark
+notices that may appear in the Original Work on all copies thereof, in whole or
+part.
+
+Licensee recognizes that methodologies, techniques, expressions, ideas and concepts
+contained in or expressed within the Original Work are proprietary information as
+long as they do not lie in the scope of any other license agreement and may be trade
+secrets of the Licensor.
+
+4. LICENSEE'S OBLIGATIONS
+Licensee is solely responsible for supervising, managing and controlling the use of
+the Original Work in compliance with this Agreement, and shall take all appropriate
+measures to ensure such compliance by itself and any users of the Original Work,
+including, without limitation, compliance with its authorized use and confidentiality
+obligations. Licensee hereby certifies and warrants to the Licensor that all Original
+Work ordered hereunder shall not be used in violation of any applicable export laws.
+
+5. WARRANTY AND DISCLAIMER OF WARRANTY, RISK OF USE, LIMITATION OF LIABILITY AND INDEMNITY
+The Original Work is made available on an "as is" basis, and without warranty of any
+kind, whether express or implied, oral or written, including, without limitation, the
+implied warranties of merchantability, title, non-infringement and fitness for a
+particular purpose, and all such warranties, conditions, undertakings, and terms are
+hereby excluded to the extent permitted by law.
+
+Each party is independently and exclusively responsible for obligations undertaken
+by it under this Agreement. No party can be held jointly and severally liable with
+another pursuant to this Agreement. No party shall be deemed an agent of another
+party pursuant to this Agreement.
+
+To the maximum extent permitted by applicable law, the licensor's potential liability
+to the Licensee, for any and all claims in anyway arising from or in connection with the
+subject matter of this agreement, whether based in contract, or other theory of
+liability, is limited as follows:
+
+The licensor's aggregate liability for direct damages shall not exceed in the aggregate
+the amount corresponding to fees actually paid by the Licensee in relation to the
+preceding twelve (12)-month period prior to the occurrence of the cause of action giving
+rise to the claim for the use of the service(s) or license(s) that caused the damages.
+
+To the maximum extent permitted by applicable law, the Licensee expressly and
+irrevocably waives, and the Licensor shall have no liability in respect of, any and all
+claims for indirect, incidental, consequential or punitive damages, including, without
+limitation, claims for lostprofits, business interruption and loss of data, that in any
+way relate to this agreement,service(s) or licenses, whether or notthe Licensor has been
+advised of the possibility of such damages and notwithstanding the failure of the
+essential purpose of any remedy.
+
+The Licensee waives any and all claims for any direct, indirect, incidental or
+consequential damages, for any reason and on any basis, against the Licensor.
+
+All legal actions against the Licensor must be filed with the appropriate judicial
+jurisdiction within two (2) years after the cause of action has arisen.
+
+The Original Work is meant to be used by trained professionals. The Licensee and its
+users are solely responsible for any results obtained from using the Original Work.
+
+6. GOVERNING LAW AND JURISDICTION
+Except as expressly permitted herein, this Agreement may be modified only by written
+amendment signed by the parties and no other act, document, usage or custom shall be
+deemed to amend or modify this Agreement, including but not limited to the Licensee's
+terms and conditions. This Agreement shall be governed, construed, and enforced in
+accordance with the substantive laws of Germany, without regard to its conflicts-of-law
+principles or to the United Nations Convention on Contracts for the International Sale
+of Goods, and will be deemed a contract under seal. The English-language version of
+this Agreement shall be the authorised text for all purposes, despite translations or
+interpretations of this Agreement into other languages. If for any reason a court of
+competent jurisdiction finds any provision of this Agreement, or a portion thereof,
+to be unenforceable, that provision shall be enforced to the maximum extent permissible
+and the remainder of this License shall remain in full force and effect.The Licensee
+acknowledges and agrees that the terms in this Section 7 shall not prevent, restrict or
+otherwise limit in any manner the Licensor's rights to seek equitable remedies, including
+injunctive relief, before any competent court in any jurisdiction.
+The place of jurisdiction is Munich, Germany.
+
+7. DATA PRIVACY
+As far as the use of the Original Work is concerned the data privacy agreement of the
+platform 'produck.de' applies: https://produck.de/data-sec.html.

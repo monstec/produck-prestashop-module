@@ -1,0 +1,793 @@
+$background-color1: rgba(17, 40, 48, 1);
+$background-color2: rgba(17, 119, 119, 1);
+$background-color3: rgba(231, 233, 234, 1);
+$signal-color-red: rgba(178,0,35,.9);
+$hover-color: rgba(26, 221, 164, 1);
+$placeholder-color: rgba(80, 204, 174, 1);
+$teal-color: rgba(43, 187, 173, 1);
+$mint-green: rgba(43, 187, 173, 0.8);
+$mobile: "(max-width: 600px)";
+$tablet: "(min-width: 600px) and (max-width: 991px)";
+$medium: "(min-width: 992px) and (max-width: 1199px)";
+$desktop: "(min-width: 1200px)";
+$desktop-xl: "(min-width: 1980px)";
+$min-height: "(max-height: 450px)";
+$font-family: "Philosopher", sans-serif;
+$shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+$shadow-small: -2px 2px 4px 1px rgba(0, 0, 0, 0.6);
+$font-color-dark: #5a5a5a;
+$font-color-extradark: rgba(90,90,90, 1);
+$font-color-light: #aaa;
+$font-color-super-light: rgb(219,219,219);
+$font-color-white: #fff;
+$navigation-height: 56px;
+$progressbar-height: 64px;
+
+#quacks-main-div, #quack-single-chat-container, #quacks-external-box {
+    display: flex;
+    flex-flow: row wrap;
+    overflow: auto;
+
+    #headline-container {
+        display: flex;
+        flex: 0 1 100%;
+        justify-content: center;
+
+        h1 {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+    }
+
+    #quacks-container, #quack-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+
+        h1, h2 {
+            margin: 40px 5px 40px 5px;
+            max-width: 75vw;
+            text-align: center;
+            text-transform: uppercase;
+            color: inherit !important;
+            line-height: 1.5;
+        }
+
+        #quacklist-wrapper, #quacklist-wrapper-external-box {
+            display: flex;
+            position: relative;
+            height: auto;
+            width: 100%;
+            justify-content: center;
+            align-items: flex-start;
+
+            #quack-overview-list, #quack-overview-list-external-box {
+                display: flex;
+                flex-flow: row wrap;
+                flex: 0 1 100%;
+                justify-content: center;
+                align-items: flex-start;
+
+                #affiliate-note {
+                    display: inline-flex;
+                    flex: 0 1 100%;
+                    flex-flow: nowrap;
+                    justify-content: flex-start;
+                    font-size: 10px;
+                }
+
+                #share-brand {
+                    display: inline-flex;
+                    flex: 0 1 100%;
+                    flex-flow: nowrap;
+                    padding: 0 4% 0 4%;
+                    justify-content: flex-end;
+
+                    .share {
+                        display: flex;
+                        flex: 0 1 auto;
+                        height: 20px;
+                        align-items: center;
+                        justify-content: flex-end;
+                        cursor: pointer;
+                        transform: translateY(6px);
+                        margin: 0 10px 0 10px;
+
+                        i {
+                            font-size: 20px;
+
+                            &:hover {
+                                color: $teal-color;
+                            }
+                        }
+                    }
+
+                    #host-wrap-wrapper, .share {
+                        display: inline-flex;
+                        flex: 0 1 auto;
+                        height: 20px;
+                        flex-flow: nowrap;
+                        justify-content: flex-end;
+                        align-items: center;
+
+                        .host-ref {
+                            display: flex;
+                            transform: translateY(6px);
+                            align-items: center;
+                            color: $font-color-dark;
+                            height: 100%;
+
+                            span {
+                                margin-right: 5px;
+                                font-size: 1rem;
+
+                                @media #{$mobile} {
+                                    font-size: 0.8rem;
+                                }
+                            }
+
+                            img {
+                                height: 20px;
+                                width: 20px;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                }
+
+                .dialogue-summary {
+                    display: flex;
+                    flex-flow: row wrap;
+                    flex: 0 1 30%;
+                    padding: 20px;
+                    margin: 10px;
+                    background: inherit;
+                    box-shadow: $shadow;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+
+                    @media #{$tablet} {
+                        flex: 0 1 45vw;
+                    }
+
+                    @media #{$mobile} {
+                        flex: 0 1 100%;
+                    }
+
+                    .stats-wrapper {
+                        display: flex;
+                        flex-flow: nowrap;
+                        flex: 0 1 100%;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .votes, .views {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            .share {
+                                display: flex;
+                                justify-content: flex-end;
+                                align-items: center;
+                                margin-left: 10px;
+                                cursor: pointer;
+
+                                i {
+                                    font-size: 15px;
+
+                                    &:hover {
+                                        color: $teal-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .summary-text {
+                        display: flex;
+                        flex-flow: row wrap;
+                        flex: 0 1 100%;
+                        justify-content: center;
+                        align-items: center;
+
+                        h3 {
+                            .question-hyperlink {
+                                font-weight: 400;
+                                font-family: inherit;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#quacks-main-div {
+    margin-top: 30px;
+
+    #quacks-container h2 {
+        font-size: 1rem;
+    }
+
+    #quack-overview-list {
+        .stats-wrapper {
+            display: inline-flex;
+            flex: 0 1 100%;
+            height: 20px;
+            flex-flow: nowrap;
+            justify-content: flex-end;
+
+            .votes, .views {
+
+                div {
+                    font-size: 0.9rem;
+                }
+
+                span {
+                    text-align: right;
+                }
+            }
+        }
+
+        .summary-text {
+            justify-content: center;
+
+            .tags {
+                display: flex;
+                flex: 0 1 100%;
+                justify-content: flex-start;
+                flex-flow: wrap;
+
+                .chip {
+                    background: $font-color-white;
+                    overflow: hidden;
+                    display: inline-block;
+                    height: 32px;
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: rgba(0,0,0,0.6);
+                    line-height: 32px;
+                    padding: 0 12px;
+                    border-radius: 16px;
+                    background-color: #e4e4e4;
+                    margin-bottom: 5px;
+                    margin-right: 5px;
+                    text-align: center;
+
+
+                    &:hover {
+                        background: $font-color-super-light;
+
+                        a {
+                            color: $font-color-extradark;
+                        }
+                    }
+
+                    a {
+                        color: $font-color-dark;
+                    }
+                }
+            }
+
+            .question-date {
+                display: flex;
+                flex: 0 1 100%;
+                justify-content: flex-end;
+
+                .published {
+                    text-align: right;
+                    color: inherit;
+                    font-size: 0.8rem;
+                }
+            }
+
+
+            h3 {
+                text-align: center;
+                width: 100%;
+                justify-content: center;
+                line-height: 1.3;
+                margin: 2rem 0 1.4rem 0;
+            }
+        }
+    }
+}
+
+@mixin more-quacks-ref {
+    display: inline-flex;
+    flex: 0 1 100%;
+    flex-flow: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 20px 20px;
+
+    a {
+        text-align: center;
+    }
+}
+
+
+#quack-single-chat-container {
+    overflow: hidden;
+
+    #quack-container {
+        justify-content: center;
+        margin: 0;
+
+        @media #{$mobile}, #{$tablet} {
+            justify-content: center;
+        }
+
+        h1#question {
+            font-size: 1.5rem;
+            align-self: center;
+            width: 100vw;
+            max-width: 100vw;
+            padding: 0 15%;
+
+            @media #{$mobile} {
+                padding: 0 10px;
+            }
+        }
+
+        #quacklist-wrapper {
+            flex: 0 1 60vw;
+            height: auto;
+            justify-content: center;
+
+            @media #{$tablet} {
+                padding: 0px;
+                flex: 0 1 75vw;
+                justify-content: center;
+            }
+
+            @media #{$mobile} {
+                padding: 0px;
+                flex: 0 1 100vw;
+                justify-content: center;
+            }
+
+            #quack-overview-list {
+                flex: 0 1 55vw;
+                justify-content: flex-end;
+                margin-bottom: 40px;
+
+                @media #{$mobile}, #{$tablet} {
+                    flex: 0 1 100% !important;
+                }
+
+                #affiliate-note {
+                    display: inline-flex;
+                    flex: 0 1 50%;
+                    flex-flow: nowrap;
+                    justify-content: flex-start;
+                    padding: 0 0 0 4%;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    .more-quacks-ref {
+        @include more-quacks-ref;
+    }
+}
+
+#quacks-external-box {
+    @extend #quacks-main-div;
+    overflow: hidden;
+    height: auto;
+    padding: 20px;
+
+    #quacks-container #quacklist-wrapper-external-box {
+        flex-flow: row wrap;
+        height: auto;
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        #quack-overview-list-external-box {
+            flex: 0 1 100%;
+
+            .dialogue-summary {
+                padding: 0 20px 0 20px !important;
+                height: inherit;
+
+                .summary-text {
+                    min-height: 5.2em;
+
+                    h3 {
+                        margin: 10px !important;
+                        line-height: 1.3em;
+                        font-size: 1em;
+                        text-align: center;
+
+                        a.question-hyperlink {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .more-quacks-ref {
+        @include more-quacks-ref;
+    }
+}
+// shows related quacks on single-article page
+#quacks-external-box.article {
+    @extend #quacks-external-box;
+    background: linear-gradient(rgba(17,40,48,0.4), rgba(17,40,48,0.3));
+    height: auto;
+    overflow: hidden;
+    margin-top: 30px;
+    border: 1px solid $font-color-super-light;
+    width: 20%;
+    border-radius: 20px;
+    box-shadow: $shadow-small;
+
+    @media #{$mobile}, #{$tablet} {
+        border-radius: 0px;
+        flex: 0 1 100%;
+        order: 5;
+        margin: 0;
+    }
+
+    #quacks-container {
+        height: inherit;
+
+        h2 {
+            font-size: 1.2rem;
+            justify-content: center;
+        }
+
+        #quacklist-wrapper-external-box #quack-overview-list-external-box {
+            flex: 0 1 100%;
+
+            .dialogue-summary {
+                height: inherit;
+
+                .summary-text {
+                    h3 {
+                        text-align: center;
+                        line-height: 1;
+                        font-weight: normal;
+
+                        a.question-hyperlink {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// shows related quacks on single-quack page
+#quacks-external-box.quacks {
+    @extend #quacks-external-box.article;
+    //    width: 30vw;
+    //    flex: 0 1 calc(20vw-15px);
+    width: 100vw;
+    flex: 0 1 100%;
+
+
+    @media #{$mobile}, #{$tablet} {
+        flex: 0 1 100%;
+        margin: 0;
+    }
+}
+
+
+#produck-ref:not(.active) {
+    display: flex;
+    position: fixed;
+    flex-flow: row wrap;
+    bottom: 40px;
+    right: 5px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 10px;
+    border-radius: 5px;
+
+    span {
+        display: none;
+    }
+
+    a {
+        background: $signal-color-red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+}
+//for single quack style
+#quack-container {
+
+    #quack-overview-list {
+
+        #stats-wrapper {
+            display: inline-flex;
+            flex: 0 1 100%;
+            height: 20px;
+            padding: 0 4% 0 4%;
+            flex-flow: nowrap;
+            justify-content: flex-end;
+
+            .votes, .views, .question-date {
+                display: flex;
+                transform: translateY(6px);
+                align-items: center;
+                color: inherit !important;
+                height: 100%;
+                margin: 0 5px 0 5px;
+
+                span {
+                    text-align: right;
+                }
+            }
+        }
+
+        .dialogue-summary {
+            padding: 0 15px 0 15px !important;
+            flex: 0 1 95% !important;
+            flex-flow: nowrap !important;
+            border-radius: 5px;
+
+
+            @media #{$mobile}, #{$tablet} {
+                flex-flow: row wrap !important;
+            }
+
+            .author {
+                display: inline-flex;
+                align-items: center;
+                padding: 0 3px 0 3px;
+
+                @media #{$mobile}, #{$tablet} {
+                    display: flex;
+                    width: 100%;
+                }
+            }
+
+            .summary-text {
+                order: -1;
+                justify-content: flex-start !important;
+
+                h3 {
+                    display: flex;
+                    align-items: center;
+                    text-align: left;
+                    //     line-height: 1.2 !important;
+                    margin: 15px !important;
+
+                    .question-hyperlink {
+                        font-size: 0.9em !important;
+                        text-align: left !important;
+
+                        a {
+                            color: #2fb5d2;
+                            word-break: break-all;
+                        }
+                    }
+                }
+            }
+            // Note: The & references the parent.
+            &.right-duck {
+                background: $background-color1 !important;
+                margin-left: auto !important;
+                align-self: flex-start !important;
+
+                .summary-text h3 {
+                    color: $font-color-super-light !important;
+                }
+
+                .author {
+                    color: $teal-color;
+
+                    @media #{$mobile}, #{$tablet} {
+                        transform: translate(-12px, -10px);
+                        justify-content: flex-end;
+                    }
+                }
+            }
+
+
+            &.left-duck {
+                background: inherit !important;
+                align-self: flex-start !important;
+                margin-right: auto !important;
+
+                .summary-text h3 {
+                    color: inherit !important;
+                }
+
+                .author {
+                    color: inherit !important;
+
+                    @media #{$mobile}, #{$tablet} {
+                        transform: translate(12px, -10px);
+                        justify-content: flex-start;
+                    }
+                }
+            }
+        }
+    }
+
+    .quack-error {
+        border-radius: 25px;
+        padding: 20px;
+        margin: 60px auto 60px auto;
+        background: #FD7688;
+    }
+}
+/**
+**Styling for Share Popup
+*/
+#share-modal {
+    display: none;
+    position: fixed;
+    width: auto;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    z-index: inherit;
+    background-color: rgba(17, 40, 48, 0.5);
+    z-index: 2147483647;
+    padding: 0;
+    margin: auto;
+    margin-top: 0;
+    max-height: 70%;
+    overflow-y: auto;
+    border-radius: 2px;
+    will-change: top, opacity;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    @media #{$mobile}, #{$tablet} {
+        max-width: 90%;
+    }
+
+    #modal-content {
+        display: flex;
+        flex: 0 1 100%;
+        width: 100%;
+        flex-flow: column wrap;
+        padding: 15px;
+
+        h2 {
+            display: flex;
+            flex: 0 1 100%;
+            font-size: 18px;
+            font-weight: 800;
+            color: $font-color-super-light;
+        }
+
+        #url-box {
+            display: inline-flex;
+            flex: 0 1 100%;
+            width: 100%;
+            flex-wrap: nowrap;
+            align-items: center;
+
+            .share-url {
+                background-color: $font-color-white;
+                color: $font-color-dark !important;
+                padding-left: 10px;
+                height: auto;
+                min-height: 35px;
+                flex: 0 1 80%;
+                margin: 0;
+            }
+
+            i {
+                margin-left: 10px;
+                cursor: pointer;
+
+                &:hover {
+                    color: $teal-color;
+                }
+            }
+        }
+    }
+
+    #share-btn-wrapper {
+        display: inline-flex;
+        flex: 0 1 100%;
+        flex-wrap: nowrap;
+        width: 100%;
+
+        .share-shariff {
+            display: flex;
+            width: 40px;
+            height: 20px;
+            margin: 2px;
+            width: 100%;
+
+            ul {
+                display: inline-flex;
+                flex: 0 1 100%;
+                flex-flow: nowrap;
+                justify-content: flex-start;
+                width: 100%;
+                margin: 0;
+
+                li.shariff-button {
+                    margin: 0 5px 0 5px;
+                    background-image: none;
+
+                    a {
+                        color: #fff;
+                        font-weight: 900;
+                    }
+                }
+            }
+        }
+    }
+
+    .modal-footer {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        height: 45px;
+        border-radius: 0 0 2px 2px;
+        background-color: #fafafa;
+        width: 100%;
+        text-align: right;
+
+        h2 {
+            line-height: 110%;
+            margin: 2.3733333333rem 0 1.424rem 0;
+        }
+
+        #close-share-modal {
+            display: flex;
+            flex: 0 1 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            user-select: none;
+            vertical-align: middle;
+            z-index: 1;
+            transition: .3s ease-out;
+            box-shadow: none;
+            background-color: transparent;
+            color: #343434;
+            border: none;
+            border-radius: 2px;
+            line-height: 36px;
+            text-transform: uppercase;
+        }
+    }
+}
