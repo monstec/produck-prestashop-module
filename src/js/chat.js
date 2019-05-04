@@ -1,4 +1,5 @@
 
+/* global Cookies */
 /* exported initChatJs */
 
 function initChatJs() {
@@ -49,8 +50,6 @@ function initChatJs() {
     }
 
     function initIframeCommunication() {
-
-        const iframe = document.getElementById('produck-iframe');
         //TODO eliminate localhost
         const allowedOrigins = [
               'https://produck.de',
