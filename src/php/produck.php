@@ -34,7 +34,7 @@ class Produck extends Module
     {
         $this->name = 'produck';
         $this->tab = 'front_office_features';
-        $this->version = '1.0.1';
+        $this->version = '1.0.0';
         $this->author = 'MonsTec UG haftungsbeschränkt';
         $this->need_instance = 0;
         $this->ps_versions_compliancy = array('min' => '1.7', 'max' => _PS_VERSION_);
