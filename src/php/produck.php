@@ -400,11 +400,14 @@ class Produck extends Module
     {
         $cid = Configuration::get('PRODUCK_CUSTOMER_ID');
 
+        // this will open a general chat (not customer specific)
         if ($cid == null || empty($cid) || $cid <=0) {
-            return;
+            $cid = '';
+            $params = '';
         }
-
-        $params = "?cid=".$cid;
+        else {
+            $params = "?cid=".$cid;
+        }
 
         $this->context->smarty->assign(
             array(
