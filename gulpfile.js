@@ -335,6 +335,7 @@ function createIndexFiles(startDir) {
     function createIndexFile(currentDir, loc) {
         // write the index file (replacing any existing one)
         fs.writeFileSync(currentDir + '/index.php', content.replace('[loc]', loc));
+        fs.chmodSync(currentDir + '/index.php', 0o755);
 
         fs.readdirSync(currentDir).forEach(function(file) {
             var currentPath = currentDir + '/' + file;
