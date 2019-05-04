@@ -400,9 +400,11 @@ class Produck extends Module
     {
         $cid = Configuration::get('PRODUCK_CUSTOMER_ID');
 
-        if ($cid != null && $cid > 0) {
-            $params = "?cid=".$cid;
+        if ($cid == null || empty($cid) || $cid <=0) {
+            return;
         }
+
+        $params = "?cid=".$cid;
 
         $this->context->smarty->assign(
             array(
