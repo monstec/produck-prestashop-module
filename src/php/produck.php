@@ -273,6 +273,7 @@ class Produck extends Module
     public function hookmoduleRoutes($params)
     {
         $routes = array();
+
         $routes['module-produck-display'] = array(
             'controller'=>'display',
             'rule'=>'quack/{quackId}/{title}',
@@ -296,6 +297,7 @@ class Produck extends Module
         $routes['module-produck-overview'] = array(
             'controller'=>'overview',
             'rule'=>'quacks',
+            'keywords'=>array(),
             'params'=>array(
                 'fc'=>'module',
                 'module'=>'produck',
