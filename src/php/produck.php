@@ -334,10 +334,18 @@ class Produck extends Module
             $this->context->link->getMediaLink(_MODULE_DIR_.$this->name.'/views/js/produck.min.js'),
             array('media' => 'all','priority' => 500, 'inline' => true, 'server' => 'remote', 'position' => 'bottom')
         );
-        $this->context->controller->registerJavascript('shariff-lib-cdn', 'https://cdn.jsdelivr.net/npm/shariff@3.0.1/dist/shariff.min.js', ['media' => 'all','priority' => 300, 'inline' => true, 'server' => 'remote', 'position' => 'bottom']);
-        $this->context->controller->registerStylesheet('shariff-style-cdn', 'https://cdn.jsdelivr.net/npm/shariff@3.0.1/dist/shariff.complete.css', ['media' => 'all','priority' => 202, 'inline' => true, 'server' => 'remote', 'position' => 'head']);
         $this->context->controller->registerJavascript(
-            'cookie-lib-cdn', 
+            'shariff-lib-cdn',
+            'https://cdn.jsdelivr.net/npm/shariff@3.0.1/dist/shariff.min.js',
+            array('media' => 'all','priority' => 300, 'inline' => true, 'server' => 'remote', 'position' => 'bottom')
+        );
+        $this->context->controller->registerStylesheet(
+            'shariff-style-cdn',
+            'https://cdn.jsdelivr.net/npm/shariff@3.0.1/dist/shariff.complete.css',
+            array('media' => 'all','priority' => 202, 'inline' => true, 'server' => 'remote', 'position' => 'head')
+        );
+        $this->context->controller->registerJavascript(
+            'cookie-lib-cdn',
             'https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js',
             array('media' => 'all','priority' => 400, 'inline' => true, 'server' => 'remote', 'position' => 'bottom')
         );
@@ -404,8 +412,7 @@ class Produck extends Module
         if ($cid == null || empty($cid) || $cid <=0) {
             $cid = '';
             $params = '';
-        }
-        else {
+        } else {
             $params = "?cid=".$cid;
         }
 
