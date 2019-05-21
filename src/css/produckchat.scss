@@ -165,7 +165,7 @@ $font-color-white: #fff;
         }
     }
 
-    #produck-iframe-wrapper {
+    #produck-frame-wrapper {
         display: flex;
         position: relative;
         justify-content: center;
@@ -176,7 +176,7 @@ $font-color-white: #fff;
         height: auto;
 
 
-        iframe#produck-iframe {
+        #produck-frame {
             width: 335px;
             height: calc(100vh - 36px);
             max-height: calc(90vh - 36px);
@@ -247,7 +247,7 @@ $font-color-white: #fff;
         }
     }
 
-    #produck-iframe-wrapper {
+    #produck-frame-wrapper {
         display: none;
     }
 

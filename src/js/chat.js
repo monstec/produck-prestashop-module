@@ -3,6 +3,10 @@
 /* exported initChatJs */
 
 function initChatJs() {
+
+    var src = $('#produck-frame').data("src");
+    $('#produck-frame').replaceWith("<iframe id='produck-frame' frameborder='0' allowfullscreen='' src='"+ src +"'></iframe>");
+
     setTimeout(function () {
         $('#produck-chat-block-home').not('active').find('.produck-chat-link').addClass('pulse');
         setTimeout(function () {
@@ -37,19 +41,19 @@ function initChatJs() {
             const channel = new MessageChannel();
             port1 = channel.port1;
             port2 = channel.port2;
-            // this will fire when iframe will answer
+            // this will fire when frame will answer
             port1.onmessage = e => {
-                handleMessageFromIframe(e);
+                handleMessageFromFrame(e);
                 resolve(e.data);
             };
-            // let iframe know we're ready tp get an answer
+            // let frame know we're ready to get an answer
             // send it its own port
-            const iframe = document.getElementById('produck-iframe');
-            iframe.contentWindow.postMessage('HereIsYourPort', '*', [port2]);
+            const frame = document.getElementById('produck-frame');
+            frame.contentWindow.postMessage('HereIsYourPort', '*', [port2]);
         });
     }
 
-    function initIframeCommunication() {
+    function initFrameCommunication() {
         //TODO eliminate localhost
         const allowedOrigins = [
               'https://produck.de',
@@ -64,9 +68,9 @@ function initChatJs() {
         });
     }
 
-    initIframeCommunication();
+    initFrameCommunication();
 
-    function handleMessageFromIframe(e) {
+    function handleMessageFromFrame(e) {
         const payload = JSON.parse(e.data);
 
         switch (payload.method) {
@@ -93,7 +97,7 @@ function initChatJs() {
                 break;
         }
 
-        return 'iframe request accomplished';
+        return 'Frame request accomplished';
     }
 
     //Basic Version just showing a link to produck.de

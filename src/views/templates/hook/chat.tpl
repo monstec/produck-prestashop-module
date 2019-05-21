@@ -25,8 +25,8 @@
   <a id="produck-chat-link" class="produck-chat-link" title="Chatten und Kaufen" data-cid="{$cid|escape:'htmlall':'UTF-8'}">
     <img src="{$ducky_image|escape:'html':'UTF-8'}" alt="helpful ducky"/>
   </a>
-  <div id="produck-iframe-wrapper">
-    <iframe id='produck-iframe' frameborder="0" allowfullscreen="" src="{$produck_url|escape:'html':'UTF-8'}{$params|escape:'html':'UTF-8'}"></iframe>
+  <div id="produck-frame-wrapper">
+    <div id='produck-frame' frameborder="0" allowfullscreen="" data-src="{$produck_url|escape:'html':'UTF-8'}{$params|escape:'html':'UTF-8'}"></div>
   </div>
 </div>
 <!-- /Block produckchat -->
