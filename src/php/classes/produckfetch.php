@@ -38,19 +38,19 @@ class ProduckFetch
 
         // directives of the build preprocessing done by gulp-preprocess
         // @if ENV='production'
-        $this->urlQuacksEndpoint = "https://api.produck.de/chat-service/quacks?userId="
-            . Configuration::get('PRODUCK_CUSTOMER_ID') . "&lang=" . $languageCode;
-        $this->urlQuackEndpoint = "https://api.produck.de/chat-service/quack?userId="
-            . Configuration::get('PRODUCK_CUSTOMER_ID') . "&lang=" . $languageCode . "&quackId=";
+        $this->urlQuacksEndpoint = "https://api.produck.de/chat-service/quacks?quackToken="
+            . Configuration::get('PRODUCK_QUACK_TOKEN') . "&lang=" . $languageCode;
+        $this->urlQuackEndpoint = "https://api.produck.de/chat-service/quack?quackToken="
+            . Configuration::get('PRODUCK_QUACK_TOKEN') . "&lang=" . $languageCode . "&quackId=";
         // @endif
         // @if ENV!='production'
         // dockerhost is resolved as the "localhost", the hostmachine where everything is run at
-        $this->urlQuacksEndpoint = "https://dockerhost:8443/chat-service/quacks?userId="
-            . Configuration::get('PRODUCK_CUSTOMER_ID') . "&lang=" . $languageCode;
-        $this->urlQuackEndpoint = "https://dockerhost:8443/chat-service/quack?userId="
-            . Configuration::get('PRODUCK_CUSTOMER_ID') . "&lang=" . $languageCode . "&quackId=";
-        //$this->urlQuacksEndpoint = "https://localhost:8443/chat-service/quacks?userId=" . Configuration::get('PRODUCK_CUSTOMER_ID');
-        //$this->urlQuackEndpoint = "https://localhost:8443/chat-service/quack?userId=" . Configuration::get('PRODUCK_CUSTOMER_ID') . "&quackId=";
+        $this->urlQuacksEndpoint = "https://dockerhost:8443/chat-service/quacks?quackToken="
+            . Configuration::get('PRODUCK_QUACK_TOKEN') . "&lang=" . $languageCode;
+        $this->urlQuackEndpoint = "https://dockerhost:8443/chat-service/quack?quackToken="
+            . Configuration::get('PRODUCK_QUACK_TOKEN') . "&lang=" . $languageCode . "&quackId=";
+        //$this->urlQuacksEndpoint = "https://localhost:8443/chat-service/quacks?quackToken=" . Configuration::get('PRODUCK_QUACK_TOKEN');
+        //$this->urlQuackEndpoint = "https://localhost:8443/chat-service/quack?quackToken=" . Configuration::get('PRODUCK_QUACK_TOKEN') . "&quackId=";
 
         // in dev environment, ignore the self-signed cert warnings
         $this->streamContext["ssl"] = array(

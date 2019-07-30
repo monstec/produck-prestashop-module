@@ -144,6 +144,7 @@ class Produck extends Module
 
         if (Tools::isSubmit('submit'.$this->name)) {
             $customerId = (string)(Tools::getValue('PRODUCK_CUSTOMER_ID'));
+            $quackToken = (string)(Tools::getValue('PRODUCK_QUACK_TOKEN'));
             $numberOfQuacks = (string)(Tools::getValue('PRODUCK_NUMBER_OF_QUACKS'));
             // _0 comes from the checkbox id in the form
             // inverse logic to catch all mistakes and have default off
@@ -161,6 +162,7 @@ class Produck extends Module
                 $output .= $this->displayError($this->l('Invalid Configuration'));
             } else {
                 Configuration::updateValue('PRODUCK_CUSTOMER_ID', $customerId);
+                Configuration::updateValue('PRODUCK_QUACK_TOKEN', $quackToken);
                 Configuration::updateValue('PRODUCK_NUMBER_OF_QUACKS', $numberOfQuacks);
                 Configuration::updateValue('PRODUCK_OPEN_QUACK_IN_WINDOW', $openInNewWindow);
                 Configuration::updateValue('PRODUCK_QUACK_URL_LENGTH', $lengthQuackUrl);
@@ -189,6 +191,13 @@ class Produck extends Module
                     'type' => 'text',
                     'label' => $this->l('Produck Customer ID'),
                     'name' => 'PRODUCK_CUSTOMER_ID',
+                    'size' => 20,
+                    'required' => true,
+                ),
+                array(
+                    'type' => 'text',
+                    'label' => $this->l('Produck Quack Token'),
+                    'name' => 'PRODUCK_QUACK_TOKEN',
                     'size' => 20,
                     'required' => true,
                 ),
@@ -259,6 +268,7 @@ class Produck extends Module
 
         // Load current value
         $helper->fields_value['PRODUCK_CUSTOMER_ID'] = Configuration::get('PRODUCK_CUSTOMER_ID');
+        $helper->fields_value['PRODUCK_QUACK_TOKEN'] = Configuration::get('PRODUCK_QUACK_TOKEN');
         $helper->fields_value['PRODUCK_NUMBER_OF_QUACKS'] = Configuration::get('PRODUCK_NUMBER_OF_QUACKS');
         $helper->fields_value['PRODUCK_OPEN_QUACK_IN_WINDOW_0']
             = (bool)Configuration::get('PRODUCK_OPEN_QUACK_IN_WINDOW');
@@ -430,10 +440,10 @@ class Produck extends Module
 
     public function quackDisplay()
     {
-        // only display quacks when customer id is set
-        $cid = Configuration::get('PRODUCK_CUSTOMER_ID');
+        // only display quacks when quack token is set
+        $token = Configuration::get('PRODUCK_QUACK_TOKEN');
 
-        if ($cid === null || $cid === false || $cid <=0) {
+        if ($token === null || $token === false || strlen($token) < 10) {
             return;
         }
 

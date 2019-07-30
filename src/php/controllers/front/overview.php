@@ -21,10 +21,10 @@ class ProduckOverviewModuleFrontController extends ModuleFrontController
 {
     public function initContent()
     {
-        // only display quacks when customer id is set
-        $cid = Configuration::get('PRODUCK_CUSTOMER_ID');
+        // only display quacks when quack token is set
+        $token = Configuration::get('PRODUCK_QUACK_TOKEN');
 
-        if ($cid === null || $cid === false || $cid <=0) {
+        if ($token === null || $token === false || strlen($token) < 10) {
             Tools::redirect('page-not-found');
         }
 
