@@ -54,11 +54,9 @@ function initChatJs() {
     }
 
     function initFrameCommunication() {
-        //TODO eliminate localhost
         const allowedOrigins = [
               'https://produck.de',
               'https://www.produck.de',
-              'https://localhost',
         ];
 
         window.onmessage = ((e) => {
