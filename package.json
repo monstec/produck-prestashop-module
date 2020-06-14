@@ -1,6 +1,6 @@
 {
   "name": "prestashop-modules",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "This project contains all modules for Prestashop.",
   "repository": "git@github.com:monstec/produck-prestashop-module.git",
   "license": "MonsTec-Standard-License-1.0",
@@ -28,17 +28,14 @@
     "gulp-postcss": "^8.0.0",
     "gulp-preprocess": "^3.0.1",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.1",
+    "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-strip-debug": "^3.0.0",
     "gulp-uglify": "^3.0.1",
     "gulp-zip": "^4.2.0",
-    "jquery": "^3.4.0",
+    "jquery": "^3.5.0",
     "jquery-ui-dist": "^1.12.1",
     "jshint": "^2.9.5",
     "merge-stream": "^1.0.1"
-  },
-  "dependencies": {
-    "npm": "^6.9.0"
   }
 }
