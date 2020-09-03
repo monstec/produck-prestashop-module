@@ -24,10 +24,12 @@ include_once 'classes/produckcache.php';
 class Produck extends Module
 {
     // @if ENV='production'
-    const PRODUCK_URL = 'https://produck.de/';
+    const PRODUCK_URL = 'https://www.produck.de/';
+    const PRODUCK_CHAT_URL = 'https://www.produck.de/chat.html';
     // @endif
     // @if ENV!='production'
     const PRODUCK_URL = 'https://localhost/';
+    const PRODUCK_CHAT_URL = 'https://localhost/chat.html';
     // @endif
 
     public function __construct()
@@ -431,7 +433,8 @@ class Produck extends Module
                 'ducky_image' => $this->getImageURL('ducky.png'),
                 'cid' => $cid,
                 'params' => $params,
-                'produck_url' => self::PRODUCK_URL
+                'produck_url' => self::PRODUCK_URL,
+                'produck_chat_url' => self::PRODUCK_CHAT_URL
             )
         );
 
@@ -526,7 +529,7 @@ class Produck extends Module
     // customer specific entry point
     public function getCustomerProduckLink()
     {
-        return self::PRODUCK_URL.'?cid='.Configuration::get('PRODUCK_CUSTOMER_ID');
+        return self::PRODUCK_CHAT_URL.'?cid='.Configuration::get('PRODUCK_CUSTOMER_ID');
     }
 
     /**
