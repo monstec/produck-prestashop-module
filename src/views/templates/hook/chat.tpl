@@ -13,10 +13,10 @@
  * @license   LICENSE.txt
 -->
 <!-- Block produckchat -->
-<div id="produck-chat-block-home" class="passive" title="Hilfe und Angebote im Chat">
+<div id="produck-chat-block-home" class="passive" title="Stellen Sie jetzt Ihre Produktfrage im Chat.">
   <div class="produck-chat-frame">
     <span class="produck-headline-text">
-      Chatten und Kaufen
+      Chat
     </span>
     <div id="produck-close-chat" href="#">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/><path d="M0 0h24v24H0z" fill="none"/></svg>

@@ -16,7 +16,7 @@
 <!-- Block produck -->
 <div id="quacks-external-box" class="main">
   <section id="quacks-container">
-    <h2>Aktuelle Quacks</h4>
+    <h2>Aktuelle Q&amp;As</h4>
     <div id="quacklist-wrapper-external-box" class="block_content flush-left">
       <div id="quack-overview-list-external-box" class="external-box">
         {if $quackData}
@@ -34,7 +34,7 @@
         {/if}
       </div>
       <div class="more-quacks-ref">
-        <a href="{$quackOverviewLink|escape:'html':'UTF-8'}" target="{$quackDisplayTarget|escape:'html':'UTF-8'}">Mehr Quacks</a>
+        <a href="{$quackOverviewLink|escape:'html':'UTF-8'}" target="{$quackDisplayTarget|escape:'html':'UTF-8'}">Mehr Q&amp;As</a>
       </div>
     </div>
   <section>

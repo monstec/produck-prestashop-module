@@ -90,11 +90,11 @@
 			</div>
     </div>
 		{else}
-			<p>Dieser Quack kann aktuell nicht angezeigt werden.</p>
+			<p>Diese Q&ampA kann aktuell nicht angezeigt werden.</p>
 		{/if}
   </section>
 	<div class="more-quacks-ref">
-    <a href="{$quackOverviewLink|escape:'htmlall':'UTF-8'}">Mehr Quacks</a>
+    <a href="{$quackOverviewLink|escape:'htmlall':'UTF-8'}">Mehr Q&amp;As</a>
   </div>
 </div>
 <div id="share-modal">

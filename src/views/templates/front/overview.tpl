@@ -19,10 +19,10 @@
 
 <div id="quacks-main-div" class="main block">
     <section id="headline-container" debog="1">
-        <h1>Quacks &#220;bersicht</h1>
+        <h1>Q&amp;A &#220;bersicht</h1>
     </section>
     <section itemscope="" itemtype="http://schema.org/Question" id="quacks-container" debog="2">        
-        <h2>In der Quacks &#220;bersicht findest Du spannende Fragen von fachkundigen Experten beantwortet.</h2>
+        <h2>In der Q&amp;A &#220;bersicht findest Du spannende Fragen von fachkundigen Experten beantwortet.</h2>
         <div id="quacklist-wrapper" class="flush-left">
             <div id="quack-overview-list">
                 <div id="share-brand">
@@ -87,7 +87,7 @@
 
 <div id="share-modal">
     <div id="modal-content">
-        <h2>Quack Teilen</h2>
+        <h2>Q&amp;A Teilen</h2>
         <div id="url-box">
             <input class="share-url" value="" />
             <i class="material-icons content-copy" title="Kopieren">content_copy</i>
